@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Formulário de Compra de Lotes</h5>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="buyForm"  (ngSubmit)="onSubmit()">
+          <div class="mb-3">
+            <label for="username" class="form-label">Email do usuário:</label>
+            <input type="text" class="form-control" id="username" formControlName="username" required>
+          </div>
+          <div class="mb-3">
+            <label for="lote" class="form-label">Número do Lote:</label>
+            <input type="text" class="form-control" id="lote" formControlName="lote" required>
+          </div>
+          <div class="mb-3">
+            <label for="lance" class="form-label">Lance:</label>
+            <input type="text" class="form-control" id="lance" formControlName="lance" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+      </div>
+    </div>
+</div>

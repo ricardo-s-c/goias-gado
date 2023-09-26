@@ -1,0 +1,17 @@
+<div class="container__menu-bar">
+    <div class="container__menu-bar-center">
+        <div class="container__menu-bar-center-left">
+            <h1>Goiás Gado</h1>
+            <nav class="container__nav-menu-bar">
+                <a href="/buy">Comprar</a>
+                <a href="/">Vender</a>
+            </nav>
+        </div>
+        <div class="container__nav-menu-bar-right">
+            <button [ngClass]="{'container__button-out-menu-bar': !toggleValue, 'hide': toggleValue}"   type="button" (click)="toggleButton()">
+                <img src="../../../assets/logout.png">
+            </button>
+            <button [ngClass]="{'container__button-enter-menu-bar': toggleValue, 'hide': !toggleValue}" routerLink="login">Entrar</button>
+        </div>
+    </div>  
+</div>
